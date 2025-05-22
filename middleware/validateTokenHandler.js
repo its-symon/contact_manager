@@ -9,7 +9,7 @@ const validateToken = asyncHandler(async (req, res, next) => {
     try {
       const decoded = jwt.verify(token, process.env.ACCESSTOKEN);
       console.log(decoded);
-    //   req.user = decoded.user; 
+      req.user = decoded.user; 
       next(); 
     } catch (err) {
       res.status(401);

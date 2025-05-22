@@ -66,7 +66,7 @@ const loginUser = asyncHandler(async(req, res)=> {
           },
         },
         process.env.ACCESSTOKEN,
-        { expiresIn: "1m" }
+        { expiresIn: "20m" }
       );
       console.log("Generated token:", accessToken);
       res.status(200).json({ accessToken });
@@ -82,7 +82,7 @@ const loginUser = asyncHandler(async(req, res)=> {
 //@access private
 
 const currentUser = asyncHandler(async(req, res)=> {
-    res.json({message: "Current user!"});
+    res.json(req.user);
 });
 
 module.exports = { registerUser, loginUser, currentUser }
