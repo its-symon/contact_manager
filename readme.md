@@ -1,21 +1,21 @@
-# 📇 Contacts Manager API
+#  Contacts Manager API
 
 A secure RESTful API built with Node.js, Express, MongoDB, and JWT for managing personal contacts. Only authenticated users can access and manipulate their own contacts.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✅ User Registration & Login with JWT Authentication
-- 🔐 Secure routes using token-based auth
-- 📤 CRUD operations on personal contacts
-- 👤 Only owners can update/delete their contacts
-- 🛡 Express Async Handler for smooth error handling
-- 🐳 Dockerized for easy setup and deployment
+-  User Registration & Login with JWT Authentication
+-  Secure routes using token-based auth
+-  CRUD operations on personal contacts
+-  Only owners can update/delete their contacts
+-  Express Async Handler for smooth error handling
+-  Dockerized for easy setup and deployment
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (via Mongoose)
